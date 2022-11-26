@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+    background-color: #283044;
+    color: #ebf5ee;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.drinks-header {
+    width: 100%;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cocktail-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cocktail-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1225px;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.cocktail-item {
+    width: 25%;
+    padding: 20px;
+}
+
+.cocktail-inner {
+    background-color: #78a1bb;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 260px;
+    min-height: 315px;
+}
+
+.cocktail-name {
+    padding-top: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.cocktail-description {
+    line-height: 140%;
+}
+
+.cocktail-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktail-image-div img {
+    width: 150px;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+
+@media screen and (max-width: 1124px) {
+    .cocktail-item {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .cocktail-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cocktail-item {
+        width: 100%;
+    }
+}
